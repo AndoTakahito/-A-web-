@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Column Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="wrap">
+
+        <header class="header">
+            <input type="checkbox" id="navBtn">
+
+            <!-- ヘッダーロゴ -->
+            <div class="logo">
+                <h1>ポケカ紹介</h1>
+            </div>
+
+            <!-- ハンバーガーメニュー部分 -->
+            <div class="nav">
+
+                <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                <input id="drawer_input" class="drawer_hidden" type="checkbox">
+
+                <!-- ハンバーガーアイコン -->
+                <label for="drawer_input" class="drawer_open"><span></span></label>
+
+                <!-- メニュー -->
+                  <nav class="nav_content"> 
+					<ul>
+                        <li class="nav_item"><a href="#home">HOME</a></li>
+                        <li class="nav_item"><a href="#about">ABOUT</a></li>
+                        <li class="nav_item"><a href="#works">WORKS</a></li>
+                        <li class="nav_item"><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#works">WORKS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <picture>
+            <source media="(max-width: 599px)" srcset="images/square.png">
+            <source media="(min-width: 640px)" srcset="images/ポケカ手元.jpeg">
+            <img src="ポケカ手元.jpeg" alt="メインビジュアル">
+        </picture>
+
+        <main>
+            <section id="home" class="sec01">
+                <h2>ポケモンカードとは</h2>
+                <!--<p>さらにコンテンツが入ります。</p>-->
+                <section>ポケットモンスターをTCG(トレーディングカードゲーム)化したものです。</section>
+                <section>グッズやサポートを駆使して先に相手のポケモンを多く倒した方の勝ちです！</section>
+                <section></section>
+            </section>
+
+            <section id="about" class="sec02">
+                <h2>ルール紹介</h2>
+                <p>さらにコンテンツが入ります。</p>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+            </section>
+
+            <section id="works" class="sec03">
+                <h2>WORKS</h2>
+                <p>さらにコンテンツが入ります。</p>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <div class="container">
+                </div>
+            </section>
+
+            <section id="contact" class="sec04">
+                <h2>CONTACT</h2>
+                <p>さらにコンテンツが入ります。</p>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+        </main>
+
+        <footer>
+            <p>© My Site </p>
+        </footer>
+        <a href="#" class="pagetop">▲</a>
+    </div>
+</body>
+
+</html>
